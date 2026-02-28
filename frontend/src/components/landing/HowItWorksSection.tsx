@@ -12,16 +12,20 @@ export default function HowItWorksSection() {
       <div className="max-w-[1000px] mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-bold text-slate-900 mb-16 text-center font-display">Así de simple funcionará</h2>
         <div className="relative">
-          <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-slate-200 -z-10"></div>
+          {/* Connecting Line */}
+          <div className="hidden md:block absolute top-[48px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-slate-200 to-transparent -z-10"></div>
+          
           <div className="grid md:grid-cols-4 gap-8">
             {STEPS.map((step, i) => (
-              <div key={i} className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full bg-white border-4 border-white shadow-lg flex items-center justify-center mb-6 relative">
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">{step.step}</div>
-                  <span className="material-symbols-outlined text-4xl text-primary">{step.icon}</span>
+              <div key={i} className="flex flex-col items-center text-center group">
+                <div className="w-24 h-24 rounded-full bg-white border-4 border-white shadow-xl flex items-center justify-center mb-8 relative transition-transform group-hover:scale-110 duration-500">
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xs shadow-lg">{step.step}</div>
+                  <div className="w-full h-full rounded-full bg-slate-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                    <span className="material-symbols-outlined text-4xl">{step.icon}</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display">{step.title}</h3>
-                <p className="text-slate-600">{step.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display group-hover:text-primary transition-colors">{step.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>

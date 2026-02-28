@@ -10,6 +10,7 @@ import TechnicianCTA from "@/components/landing/TechnicianCTA";
 import FaqSection from "@/components/landing/FaqSection";
 import Footer from "@/components/landing/Footer";
 import WaitlistSection from "@/components/landing/WaitlistSection";
+import DistrictVotingResults from "@/components/landing/DistrictVotingResults";
 
 export default function LandingPage() {
   return (
@@ -17,6 +18,7 @@ export default function LandingPage() {
       <Header />
       <main>
         <HeroSection />
+        <DistrictVotingResults />
         <SuccessCaseSection />
         <QuickWinFeatures />
         <ServicesGrid />

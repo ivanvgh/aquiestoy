@@ -25,18 +25,18 @@ export default function ServicesGrid() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SERVICES.map((service, i) => {
             return (
-              <div key={i} className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white hover:shadow-xl transition-all duration-300 p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="bg-accent-blue-light p-3 rounded-lg text-primary">
-                    <span className="material-symbols-outlined">{service.icon}</span>
+              <div key={i} className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-8">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="bg-accent-blue-light p-4 rounded-xl text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <span className="material-symbols-outlined text-2xl">{service.icon}</span>
                   </div>
-                  <span className="text-sm font-semibold px-2 py-1 rounded text-slate-400 bg-slate-50">
+                  <span className="text-[10px] uppercase font-black tracking-widest px-2 py-1 rounded text-slate-400 bg-slate-50">
                     {service.price}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2 font-display">{service.title}</h3>
-                <p className="text-slate-500 text-sm mb-4">{service.description}</p>
-                <a className="inline-flex items-center text-primary font-semibold text-sm hover:underline" href="#">
+                <p className="text-slate-500 text-sm mb-6 leading-relaxed">{service.description}</p>
+                <a className="inline-flex items-center text-primary font-bold text-sm hover:gap-2 transition-all" href="#waitlist">
                   Solicitar servicio <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
                 </a>
               </div>

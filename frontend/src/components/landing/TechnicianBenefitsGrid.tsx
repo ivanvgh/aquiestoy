@@ -1,9 +1,9 @@
 const BENEFITS = [
   {
     icon: "payments",
-    title: "Gana más, paga nada",
+    title: "Maximiza tus Ingresos",
     description:
-      "Comisión S/ 0 durante el lanzamiento. Todo lo que cobras es íntegramente para ti por tus primeros 3 trabajos.",
+      "Aprovecha el 0% de comisión durante el lanzamiento. Todo lo que cobras es íntegramente para ti por tus primeros 3 trabajos.",
     gradient: "from-amber-400 via-orange-500 to-red-500",
     featured: true,
   },
@@ -27,6 +27,13 @@ const BENEFITS = [
     description:
       "Accede a capacitaciones VIP, bonos por metas y vales para renovar tus herramientas. Premiamos tu excelencia.",
     gradient: "from-violet-400 to-purple-500",
+  },
+  {
+    icon: "reviews",
+    title: "Tu reputación, tu activo",
+    description:
+      "Construye tu prestigio con reseñas de clientes. A mejor calificación y más trabajos realizados, más clientes confiarán en ti.",
+    gradient: "from-pink-400 to-rose-500",
   },
 ];
 
