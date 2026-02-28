@@ -1,8 +1,8 @@
 const FEATURES = [
-  { icon: "shield_person", title: "Antecedentes verificados", description: "Revisión policial y penal" },
-  { icon: "timer", title: "Respuesta en minutos", description: "Listos para atenderte hoy" },
-  { icon: "payments", title: "Precio desde S/36", description: "Sin costos ocultos" },
-  { icon: "verified", title: "Garantía de calidad", description: "Satisfacción asegurada" },
+  { icon: "shield_person", title: "Identidad verificada", description: "Revisión de antecedentes penales" },
+  { icon: "timer", title: "Cero esperas", description: "Conexión directa con técnicos disponibles" },
+  { icon: "handshake", title: "Trato directo y justo", description: "Tú elijes la mejor propuesta" },
+  { icon: "verified", title: "Respaldo AquiEstoy", description: "Mediación en caso de inconvenientes" },
 ];
 
 export default function QuickWinFeatures() {

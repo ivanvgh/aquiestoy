@@ -7,10 +7,10 @@ export default function ReferralBanner() {
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex-1 text-center md:text-left">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium mb-4">
-              <span className="text-xl">🎁</span> Programa de Referidos
+              <span className="text-xl">🌟</span> AquiEstoy Rewards
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display">Refiere y gana S/10 en tu Yape</h2>
-            <p className="text-info text-lg">Comparte tu código con amigos. Ellos reciben descuento y tú ganas efectivo al instante.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display">Suma créditos por tu recomendación</h2>
+            <p className="text-info text-lg">Invita a amigos (técnicos o clientes) y acumula créditos canjeables por servicios o beneficios exclusivos en el futuro.</p>
           </div>
           <div className="shrink-0">
             <button className="bg-secondary hover:bg-accent-orange-dark text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-transform hover:-translate-y-1 active:translate-y-0 w-full md:w-auto">

@@ -15,20 +15,20 @@ export default function SuccessCaseSection() {
           <div className="lg:col-span-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-orange-light border border-accent-orange-border mb-6">
               <span className="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
-              <span className="text-secondary text-xs font-bold tracking-wide uppercase">Casos de Éxito</span>
+              <span className="text-secondary text-xs font-bold tracking-wide uppercase">Lo que puedes esperar</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-primary mb-6 tracking-tight font-display">Resultados Reales en Arequipa</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-primary mb-6 tracking-tight font-display">Nivel de acabado esperado</h2>
             <div className="space-y-6">
-              <div className="p-6 rounded-2xl bg-surface-light border-l-4 border-secondary">
-                <h4 className="font-bold text-slate-900 mb-2 italic">&quot;Pintura de fachada integral&quot;</h4>
-                <p className="text-slate-600 mb-4">Renovación total en Cerro Colorado. Se aplicó base selladora y dos manos de pintura premium elastomérica, ideal para el clima de Arequipa.</p>
+              <div className="p-6 rounded-2xl bg-surface-light border-l-4 border-secondary text-left">
+                <h4 className="font-bold text-slate-900 mb-2 italic">&quot;Estándar de calidad en pintura&quot;</h4>
+                <p className="text-slate-600 mb-4 text-sm">Este es el nivel de ejecución que exigimos a nuestros técnicos certificados. Desde la protección de superficies hasta el acabado final, así es como transformamos tu hogar.</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                    <Image alt="Cliente" className="object-cover" src={CLIENT_AVATAR_URL} width={40} height={40} />
+                  <div className="w-10 h-10 rounded-full bg-accent-blue-light flex items-center justify-center">
+                    <span className="material-symbols-outlined text-primary">verified</span>
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-slate-900 text-left">Sr. Valdivia</p>
-                    <p className="text-xs text-slate-500 text-left">Cerro Colorado, Arequipa</p>
+                    <p className="text-sm font-bold text-slate-900 text-left">Resultados Garantizados</p>
+                    <p className="text-xs text-slate-500 text-left">Referencia de calidad AquiEstoy</p>
                   </div>
                 </div>
               </div>

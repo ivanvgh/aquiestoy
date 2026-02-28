@@ -9,6 +9,7 @@ import SafetySection from "@/components/landing/SafetySection";
 import TechnicianSection from "@/components/landing/TechnicianSection";
 import FaqSection from "@/components/landing/FaqSection";
 import Footer from "@/components/landing/Footer";
+import WaitlistSection from "@/components/landing/WaitlistSection";
 
 export default function LandingPage() {
   return (
@@ -23,6 +24,7 @@ export default function LandingPage() {
         <ReferralBanner />
         <SafetySection />
         <TechnicianSection />
+        <WaitlistSection />
         <FaqSection />
       </main>
       <Footer />

@@ -17,19 +17,19 @@ export default function HeroSection() {
           <div className="flex flex-col gap-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-blue-light border border-accent-blue-border w-fit">
               <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
-              <span className="text-primary text-xs font-bold tracking-wide uppercase">Disponible en Arequipa</span>
+              <span className="text-primary text-xs font-bold tracking-wide uppercase">Próximamente en Arequipa</span>
             </div>
             <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight font-display">
-              Tu hogar en manos de <span className="text-primary">expertos</span>. Hoy mismo.
+              Técnicos de confianza a un <span className="text-primary">mensaje</span> de distancia.
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed max-w-lg">
-              AquiEstoy conecta a Arequipa con técnicos verificados, puntuales y con precios transparentes. Olvídate de la incertidumbre.
+              AquiEstoy conectará a Arequipa con técnicos verificados, puntuales y con precios transparentes. Únete a la lista de espera o postula como técnico.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mt-2">
-              <button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white h-14 px-8 rounded-xl text-base font-bold transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
-                Quiero un técnico seguro
+              <a href="#waitlist" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white h-14 px-8 rounded-xl text-base font-bold transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
+                Unirme a la lista de espera
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-              </button>
+              </a>
               <a className="w-full sm:w-auto h-14 px-6 flex items-center justify-center text-secondary font-bold hover:bg-accent-orange-light rounded-xl transition-colors" href="#technician">
                 Soy técnico, quiero ganar más
               </a>
@@ -42,7 +42,7 @@ export default function HeroSection() {
                   </div>
                 ))}
               </div>
-              <p>+2,000 arequipeños confían en nosotros</p>
+              <p>Comunidad de técnicos en crecimiento</p>
             </div>
           </div>
           <div className="relative aspect-video lg:aspect-auto lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
@@ -52,8 +52,11 @@ export default function HeroSection() {
                 <span className="material-symbols-outlined text-accent-green-muted">verified_user</span>
                 <span className="font-bold">Garantía Total</span>
               </div>
-              <p className="text-sm opacity-90">Si el trabajo no queda bien, lo arreglamos gratis.</p>
+              <p className="text-sm opacity-90">Soporte y mediación en cada etapa de tu servicio.</p>
             </div>
+            <p className="absolute top-8 left-8 z-20 text-white max-w-xs bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-sm">
+              Lleva la ciudad a tu puerta. Desde reparaciones expertas hasta servicios profesionales, <span className="font-bold">el experto va hacia ti.</span>
+            </p>
             <Image
               alt="Técnico profesional trabajando en un hogar de Arequipa"
               className="object-cover object-center"

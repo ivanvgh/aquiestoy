@@ -1,7 +1,10 @@
+"use client";
+
 const FAQS = [
-  { question: "¿Cómo verifican a los técnicos?", answer: "Realizamos una verificación rigurosa de identidad (DNI), antecedentes penales, policiales y judiciales. Además, entrevistamos personalmente a cada técnico." },
-  { question: "¿Qué pasa si el técnico no llega?", answer: "Si el técnico cancela o no llega, te asignamos otro inmediatamente o te devolvemos el 100% de tu dinero reservado." },
-  { question: "¿Puedo pagar en efectivo?", answer: "Por seguridad, todos los pagos se realizan a través de la app (tarjeta o Yape/Plin) para mantener la garantía y el rastro de la transacción." },
+  { question: "¿Cómo verifican a los técnicos?", answer: "Validamos la identidad de cada técnico y realizamos una revisión de sus antecedentes penales antes de permitirles unirse a la plataforma." },
+  { question: "¿Qué sucede si hay algún imprevisto?", answer: "Promovemos una comunidad basada en el compromiso y la puntualidad. Si un profesional no pudiera asistir, nuestro equipo de soporte te ayudará a reasignar el servicio de inmediato y gestionará una solución para que tu experiencia sea positiva." },
+  { question: "¿Puedo pagar en efectivo?", answer: "Sí. En esta etapa, promovemos el trato directo. Puedes pagar en efectivo, Yape o transferencia una vez que el trabajo esté terminado y estés totalmente conforme." },
+  { question: "¿Tienen garantía por los trabajos?", answer: "AquiEstoy actúa como mediador y seleccionamos técnicos que ofrecen garantía por su mano de obra. En caso de inconvenientes, nuestro equipo de soporte intervendrá para ayudarte a encontrar una solución justa." },
 ];
 
 export default function FaqSection() {
@@ -20,13 +23,19 @@ export default function FaqSection() {
             </details>
           ))}
         </div>
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">¿No encontraste tu distrito?</h3>
-          <p className="text-slate-600 mb-6">Estamos expandiéndonos rápidamente por todo Arequipa. Déjanos tu correo y te avisaremos.</p>
-          <form className="flex flex-col sm:flex-row max-w-md mx-auto gap-2">
-            <input className="flex-1 rounded-lg border-slate-300 focus:border-primary focus:ring focus:ring-primary/20 bg-white px-4 py-2" placeholder="tucorreo@ejemplo.com" type="email" />
-            <button className="bg-primary text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/90 transition-colors">Avisarme</button>
-          </form>
+        <div className="text-center bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+          <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">Arequipa, tú decides dónde empezamos</h3>
+          <p className="text-slate-600 mb-6 max-w-lg mx-auto">
+            Estamos priorizando el lanzamiento según los votos de cada distrito. Asegura tu lugar, dinos qué necesitas y recibe beneficios exclusivos por ser de los primeros en apoyarnos.
+          </p>
+          <div className="flex justify-center">
+            <a 
+              href="#waitlist" 
+              className="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-8 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-md"
+            >
+              Votar y Asegurar Beneficio
+            </a>
+          </div>
         </div>
       </div>
     </section>
