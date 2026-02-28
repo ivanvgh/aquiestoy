@@ -35,10 +35,14 @@ dist/
 # IDEs y editores
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
+
+# Docs (local only, not version-controlled)
+.docs/
 
 # Secretos y credenciales
 *.pem
