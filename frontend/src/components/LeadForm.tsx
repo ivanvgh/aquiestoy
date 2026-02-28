@@ -127,7 +127,7 @@ export default function LeadForm({ type, className }: LeadFormProps) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={cn("space-y-4 text-left p-6 bg-white rounded-xl shadow-lg border border-slate-100", className)}
+      className={cn("space-y-4 text-left", className)}
     >
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1">Nombre Completo</label>

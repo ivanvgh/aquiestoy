@@ -9,7 +9,7 @@ const CLIENT_AVATAR_URL =
 
 export default function SuccessCaseSection() {
   return (
-    <section className="py-24 px-6 bg-white overflow-hidden">
+    <section className="py-12 lg:py-24 px-6 bg-white overflow-hidden">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5">

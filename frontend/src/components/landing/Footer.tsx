@@ -24,6 +24,7 @@ export default function Footer() {
               <li><a className="hover:text-white transition-colors" href="#">Electricidad</a></li>
               <li><a className="hover:text-white transition-colors" href="#">Limpieza</a></li>
               <li><a className="hover:text-white transition-colors" href="#">Pintura</a></li>
+              <li><a className="hover:text-white transition-colors" href="/experts">Trabaja con nosotros</a></li>
             </ul>
           </div>
           <div>

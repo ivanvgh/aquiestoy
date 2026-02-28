@@ -113,35 +113,33 @@ export default function DesignTechnicianForm() {
   }
 
   return (
-    <div className="bg-surface-light p-6 rounded-2xl border border-slate-200">
-      <h3 className="text-lg font-bold text-slate-900 mb-4 font-display">Postula ahora</h3>
       <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">Mis Especialidades</label>
             <div className="max-h-48 overflow-y-auto pr-1 -mr-1 custom-scrollbar">
-              <div className="grid grid-cols-2 gap-2">
-                {SPECIALTIES.map((spec) => (
-                  <label
-                    key={spec}
-                    className={cn(
-                      "flex items-center gap-2 p-2 rounded-lg border text-xs cursor-pointer transition-all justify-start text-left",
-                      "hover:bg-slate-50",
-                      selectedSpecialties.includes(spec) 
-                        ? "border-secondary bg-secondary/5 text-secondary-dark font-bold" 
-                        : "border-slate-200 text-slate-600"
-                    )}
-                  >
-                    <input
-                      type="checkbox"
-                      value={spec}
-                      {...register("specialties")}
-                      className="h-3 w-3 rounded border-slate-300 text-secondary focus:ring-secondary/20"
-                    />
-                    {spec}
-                  </label>
-                ))}
-              </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {SPECIALTIES.map((spec) => (
+                    <label
+                      key={spec}
+                      className={cn(
+                        "flex items-center gap-2 p-2.5 rounded-lg border text-xs cursor-pointer transition-all justify-start text-left",
+                        "hover:bg-slate-50",
+                        selectedSpecialties.includes(spec) 
+                          ? "border-secondary bg-secondary/5 text-secondary-dark font-bold" 
+                          : "border-slate-200 text-slate-600"
+                      )}
+                    >
+                      <input
+                        type="checkbox"
+                        value={spec}
+                        {...register("specialties")}
+                        className="h-4 w-4 rounded border-slate-300 text-secondary focus:ring-secondary/20"
+                      />
+                      <span className="truncate sm:whitespace-normal">{spec}</span>
+                    </label>
+                  ))}
+                </div>
             </div>
             {errors.specialties && <p className="text-accent-red text-[10px] mt-1">{errors.specialties.message}</p>}
           </div>
@@ -158,28 +156,28 @@ export default function DesignTechnicianForm() {
 
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">Zonas de Cobertura</label>
-            <div className="grid grid-cols-2 gap-2 max-h-40 overflow-y-auto p-1 border border-slate-100 rounded-lg custom-scrollbar">
-              {DISTRICTS.map((dist) => (
-                <label
-                  key={dist}
-                  className={cn(
-                    "flex items-center gap-1.5 p-1.5 rounded-lg border text-[10px] cursor-pointer transition-all justify-start text-left",
-                    "hover:bg-slate-50",
-                    selectedDistricts.includes(dist)
-                      ? "border-secondary bg-secondary/5 text-secondary-dark font-bold"
-                      : "border-slate-200 text-slate-600"
-                  )}
-                >
-                  <input
-                    type="checkbox"
-                    value={dist}
-                    {...register("districts")}
-                    className="h-3 w-3 rounded border-slate-300 text-secondary focus:ring-secondary/20"
-                  />
-                  {dist}
-                </label>
-              ))}
-            </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 max-h-[200px] overflow-y-auto pr-2 custom-scrollbar">
+                  {DISTRICTS.map((dist) => (
+                    <label
+                      key={dist}
+                      className={cn(
+                        "flex items-center gap-2 p-2 rounded-lg border text-[11px] cursor-pointer transition-all justify-start text-left",
+                        "hover:bg-slate-50",
+                        selectedDistricts.includes(dist)
+                          ? "border-secondary bg-secondary/5 text-secondary-dark font-bold"
+                          : "border-slate-200 text-slate-600"
+                      )}
+                    >
+                      <input
+                        type="checkbox"
+                        value={dist}
+                        {...register("districts")}
+                        className="h-3.5 w-3.5 rounded border-slate-300 text-secondary focus:ring-secondary/20"
+                      />
+                      <span className="truncate">{dist}</span>
+                    </label>
+                  ))}
+                </div>
             {errors.districts && <p className="text-accent-red text-[10px] mt-1">{errors.districts.message}</p>}
           </div>
         </div>
@@ -227,6 +225,5 @@ export default function DesignTechnicianForm() {
           </p>
         </div>
       </form>
-    </div>
   );
 }

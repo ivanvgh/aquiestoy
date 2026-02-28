@@ -11,10 +11,10 @@ const HERO_IMAGE_URL =
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 px-6">
+    <section className="relative pt-8 pb-10 lg:pt-16 lg:pb-32 px-6">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="flex flex-col gap-6 lg:gap-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-blue-light border border-accent-blue-border w-fit">
               <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
               <span className="text-primary text-xs font-bold tracking-wide uppercase">Próximamente en Arequipa</span>
@@ -26,12 +26,13 @@ export default function HeroSection() {
               AquiEstoy conectará a Arequipa con técnicos verificados, puntuales y con precios transparentes. Únete a la lista de espera o postula como técnico.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mt-2">
-              <a href="#waitlist" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white h-14 px-8 rounded-xl text-base font-bold transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
-                Unirme a la lista de espera
-                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              <a className="w-full sm:w-auto h-14 px-8 flex items-center justify-center bg-secondary hover:bg-secondary-dark text-white font-bold rounded-xl transition-all shadow-xl shadow-secondary/20 gap-3 group" href="/experts">
+                <span className="material-symbols-outlined text-[22px]">payments</span>
+                Para técnicos
               </a>
-              <a className="w-full sm:w-auto h-14 px-6 flex items-center justify-center text-secondary font-bold hover:bg-accent-orange-light rounded-xl transition-colors" href="#technician">
-                Soy técnico, quiero ganar más
+              <a href="#waitlist" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white h-14 px-8 rounded-xl text-base font-bold transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
+                <span className="material-symbols-outlined text-[22px]">schedule</span>
+                Para clientes
               </a>
             </div>
             <div className="flex items-center gap-4 pt-4 text-sm text-slate-500">
@@ -47,14 +48,14 @@ export default function HeroSection() {
           </div>
           <div className="relative aspect-video lg:aspect-auto lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
-            <div className="absolute bottom-8 left-8 z-20 text-white max-w-xs bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+            <div className="hidden lg:block absolute bottom-8 left-8 z-20 text-white max-w-xs bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
               <div className="flex items-center gap-2 mb-2">
                 <span className="material-symbols-outlined text-accent-green-muted">verified_user</span>
                 <span className="font-bold">Garantía Total</span>
               </div>
               <p className="text-sm opacity-90">Soporte y mediación en cada etapa de tu servicio.</p>
             </div>
-            <p className="absolute top-8 left-8 z-20 text-white max-w-xs bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-sm">
+            <p className="hidden lg:block absolute top-8 left-8 z-20 text-white max-w-xs bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-sm">
               Lleva la ciudad a tu puerta. Desde reparaciones expertas hasta servicios profesionales, <span className="font-bold">el experto va hacia ti.</span>
             </p>
             <Image

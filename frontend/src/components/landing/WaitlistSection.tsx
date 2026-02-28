@@ -18,7 +18,7 @@ export default function WaitlistSection() {
                 Únete a la Revolución del Servicio en Arequipa
               </h2>
               <p className="text-white/80 text-lg mb-8">
-                No somos solo una app, somos tu nuevo aliado de confianza. Regístrate hoy como **&quot;Cliente Fundador&quot;** y ayuda a decidir qué distritos abrimos primero.
+                No somos solo una app, somos tu nuevo aliado de confianza. Regístrate hoy como <strong>&ldquo;Cliente Fundador&rdquo;</strong> y ayuda a decidir qué distritos abrimos primero.
               </p>
               <ul className="space-y-4">
                 {[
