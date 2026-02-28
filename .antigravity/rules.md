@@ -2,15 +2,14 @@
 
 ## Project Context
 Marketplace connecting clients with verified independent technicians in Arequipa, Peru.
-Refer to `docs/` for business strategy, benchmarking, and feature specs.
+Refer to `.docs/` for business strategy, benchmarking, and feature specs (local only, not in git).
 Refer to `PROJECT_RULES.md` for code standards and tech stack.
 
 ## Git Workflow — STRICT RULES
 
 ### Branch Structure
-- `master` — Production. Deployed to Vercel. ONLY landing page / frontend code.
-- `dev` — Integration. All code lives here (backend, frontend, docs, infra).
-- `main` — Legacy. Do not use.
+- `master` — Production. Deployed to Vercel.
+- `dev` — Integration. All code merges here first.
 
 ### Rules
 1. **NEVER commit directly to `dev` or `master`.** Always create a feature branch first.
@@ -29,31 +28,20 @@ Refer to `PROJECT_RULES.md` for code standards and tech stack.
    git merge feat/feature-name
    git branch -d feat/feature-name
    ```
-5. **To deploy to production**, cherry-pick specific commits from `dev` to `master`:
+5. **To deploy to production**, merge `dev` into `master`:
    ```
    git checkout master
-   git cherry-pick <commit-hash>
+   git merge dev
    git checkout dev
    ```
-6. **NEVER push docs/, backend/, docker-compose.yml, Makefile, or PROJECT_RULES.md to `master`.** A pre-commit hook enforces this, but the AI must also respect it.
-7. **NEVER run `git push` without explicit user approval.**
+6. **NEVER run `git push` without explicit user approval.**
 
-### What Goes to `master`
-- Frontend landing page code (components, pages, styles)
-- Frontend config (package.json, tailwind.config.ts, tsconfig.json)
-- Supabase integration for form submissions
-- .gitignore
-
-### What NEVER Goes to `master`
-- docs/
-- backend/
-- docker-compose.yml
-- Makefile
-- PROJECT_RULES.md
-- CLAUDE.md
+### Docs
+- Documentation lives in `.docs/` (gitignored, local only).
+- NEVER create a `docs/` directory in the repo — docs are not version-controlled.
 
 ## Infrastructure — Phase 0
-- Frontend: Vercel free tier (deploys from `master` branch)
+- Frontend: Vercel free tier (deploys from `master` branch, root directory set to `frontend/`)
 - Database: Supabase free tier (leads + file storage for antecedentes penales)
 - No backend deployment yet. Django backend is developed locally on `dev` only.
 
