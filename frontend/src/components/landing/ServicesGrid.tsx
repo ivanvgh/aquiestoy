@@ -1,0 +1,49 @@
+"use client";
+
+import { cn } from "@/lib/utils";
+
+const SERVICES = [
+  { icon: "plumbing", title: "Gasfitería", description: "Reparación de fugas, instalación de grifos y mantenimiento general.", price: "Por cotizar" },
+  { icon: "cleaning_services", title: "Limpieza", description: "Limpieza profunda de departamentos, casas y oficinas.", price: "Por cotizar" },
+  { icon: "format_paint", title: "Pintura", description: "Pintado de interiores, fachadas y retoques profesionales.", price: "Por cotizar" },
+  { icon: "electrical_services", title: "Electricidad", description: "Instalaciones, cableado, reparación de cortocircuitos.", price: "Por cotizar" },
+  { icon: "carpenter", title: "Carpintería", description: "Reparación de muebles, puertas y trabajos en madera.", price: "Por cotizar" },
+  { icon: "key", title: "Cerrajería", description: "Apertura de puertas, cambio de chapas y seguridad.", price: "Por cotizar" },
+  { icon: "local_shipping", title: "Mudanza", description: "Traslado seguro de tus pertenencias con personal calificado.", price: "Por cotizar" },
+  { icon: "directions_car", title: "Carwash a domicilio", description: "Lavado premium de tu vehículo en la comodidad de tu hogar.", price: "Por cotizar" },
+  { icon: "rv_hookup", title: "Grúa y Auxilio Mecánico", description: "Asistencia rápida en ruta y remolque para tu vehículo.", price: "Por cotizar" },
+];
+
+export default function ServicesGrid() {
+  return (
+    <section className="py-24 px-6 bg-white" id="services">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 font-display">Soluciones para cada rincón</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">Encuentra al experto ideal para ese arreglo que has estado postergando.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {SERVICES.map((service, i) => {
+            return (
+              <div key={i} className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-8">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="bg-accent-blue-light p-4 rounded-xl text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <span className="material-symbols-outlined text-2xl">{service.icon}</span>
+                  </div>
+                  <span className="text-[10px] uppercase font-black tracking-widest px-2 py-1 rounded text-slate-400 bg-slate-50">
+                    {service.price}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 font-display">{service.title}</h3>
+                <p className="text-slate-500 text-sm mb-6 leading-relaxed">{service.description}</p>
+                <a className="inline-flex items-center text-primary font-bold text-sm hover:gap-2 transition-all" href="#waitlist">
+                  Solicitar servicio <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
