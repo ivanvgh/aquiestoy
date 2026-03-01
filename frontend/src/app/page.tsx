@@ -11,6 +11,7 @@ import FaqSection from "@/components/landing/FaqSection";
 import Footer from "@/components/landing/Footer";
 import WaitlistSection from "@/components/landing/WaitlistSection";
 import DistrictVotingResults from "@/components/landing/DistrictVotingResults";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function LandingPage() {
   return (
@@ -30,6 +31,7 @@ export default function LandingPage() {
         <FaqSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

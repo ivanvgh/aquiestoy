@@ -31,12 +31,21 @@ export const metadata: Metadata = {
     siteName: "AquiEstoy",
     locale: "es_PE",
     type: "website",
+    images: [
+      {
+        url: "/images/og-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "AquiEstoy - Técnicos verificados en Arequipa",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AquiEstoy - Servicios de Hogar en Arequipa",
     description:
       "Técnicos verificados, puntuales y con precios transparentes en Arequipa.",
+    images: ["/images/og-preview.png"],
   },
   robots: {
     index: true,

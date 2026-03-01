@@ -6,5 +6,9 @@ services:
     volumes:
       - ./frontend/src:/app/src
       - ./frontend/public:/app/public
+      - /app/node_modules  # preserve container's node_modules
+    env_file:
+      - path: ./frontend/.env.local
+        required: false  # don't crash if the file doesn't exist yet
     environment:
       - WATCHPACK_POLLING=true
